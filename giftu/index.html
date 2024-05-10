@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <style>
+        p{
+            font-size: larger;
+            width: 50%;
+        }
+        input{
+            height: 25px;
+            font-size: larger;
+        }
+        #submit{
+            width: 25%;
+            height: 35px;
+            background-color: rgb(17, 232, 160);
+            border-color: aquamarine;
+            color: white;
+            font-weight:800;
+        }
+
+        #reward{
+            width: 25%;
+            height: 35px;
+            background-color: rgb(103, 232, 17);
+            border-color: rgb(255, 255, 255);
+            color: white;
+            font-weight:800;
+        }
+    </style>
+    <script>
+        function check(){
+            var q1 = document.getElementById("q1").value;
+            var q2 = document.getElementById("q2").value;
+            var q3 = document.getElementById("q3").value;
+            var q4 = document.getElementById("q4").value;
+            var ctr = 0;
+            if(q1!="verstappen"){
+                var hq1 = document.getElementById("hq1");
+                hq1.style.display = "block";
+                ctr=ctr+1;
+            }
+            else{
+                var hq1 = document.getElementById("hq1");
+                console.log("inside")
+                hq1.style.display = "none";
+            }
+            if(q2!="bottas"){
+                var hq2 = document.getElementById("hq2");
+                hq2.style.display = "block";
+                ctr=ctr+1;
+            }
+            else{
+                var hq2 = document.getElementById("hq2");
+                console.log("inside")
+                hq2.style.display = "none";
+            }
+            if(q3!=4){
+                var hq3 = document.getElementById("hq3");
+                hq3.style.display = "block";
+                ctr=ctr+1;
+            }
+            else{
+                var hq3 = document.getElementById("hq3");
+                console.log("inside")
+                hq3.style.display = "none";
+            }
+            if(q4!=7358755271){
+                var hq4 = document.getElementById("hq4");
+                hq4.style.display = "block";
+                ctr=ctr+1;
+            }
+            else{
+                var hq4 = document.getElementById("hq4");
+                console.log("inside")
+                hq4.style.display = "none";
+            }
+            if(ctr==0){
+                var reward = document.getElementById("reward");
+                reward.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 align = "center">Prove you are the intended recipient for this information by taking part in this 4 step verification process</h2>
+    <h3 align = "center">Use laptop for a better experience</h3>
+    <h4 align = "center" style="color: red;">Summa wrong answers um kuduthu paaru XD</h4>
+    <table border = 1 align="center">
+    <tr><td><p>If someone asks you "watappen", your reply will be:</p>
+    <p id="hq1" style="display: none; color: red;">Are you sure?</p></td>
+    <td><input type="text" name = "q1" id = "q1"></td></tr>
+    <tr><td><p>Fill in the blank</p>
+    <img src="MEME.png" width="25%" height="25%"><br>
+    <p id="hq2" style="display: none; color: red;">Nalla yosichu paaru...</p></td>
+    <td><input type="text" name = "q2" id = "q2"></td></tr>
+    <tr><td><p>How many fingers are involved in the perfect handshake?</p>
+    <p id="hq3" style="display: none; color: red;">Adei...the PERFECT handshake</p></td>
+    <td><input type="number" name = "q3" id = "q3"></td></tr>
+    <tr><td><p>You're in a hostage situation and have a gun to your head. </p>
+        <p width = "50%">The kidnappers say they will let you go free only if you can contact your favourite sister.</p>
+        <p> They give you a burner phone.</p>
+        <p>What number will you dial?</p>
+        <div id = "hq4" style="display: none;"> <div class="tenor-gif-embed" data-postid="17877558341035060990" data-share-method="host" data-aspect-ratio="2.30556" data-width="50%"><a href="https://tenor.com/view/jailer-rajnikanth-laughing-laugh-rajinikanth-gif-17877558341035060990">Jailer Rajnikanth GIF</a>from <a href="https://tenor.com/search/jailer-gifs">Jailer GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div></td>
+    <td><input type="tel" name = "q4" id = "q4"><br><br></td>
+    </table>
+    <br><br>
+    <div align = "center"><button id = "submit" onclick="check()">LET'S GO!</button></div>
+    <div align = "center" ><button id = "reward" style="display: none;" onclick="window.location.href='index1.html'">PROCEED TO REWARD</button></div>
+
+</body>
+</html>
